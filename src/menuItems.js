@@ -27,6 +27,7 @@ export const menuItems = [
 					{
 						id: 222,
 						title: "Backend",
+						url: "backend",
 						submenu: [
 							{
 								id: 2221,

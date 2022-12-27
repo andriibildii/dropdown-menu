@@ -6,6 +6,7 @@ import SEO from "../routes/SEO";
 import Services from "../routes/Services";
 import Layout from "./Layout";
 import Frontend from "../routes/Frontend";
+import Backend from "../routes/Backend";
 import PHP from "../routes/PHP";
 import Node from "../routes/Node";
 import AboutWho from "../routes/AboutWho";
@@ -24,6 +25,7 @@ const App = () => {
 					<Route path="web-design" element={<WebDesign />} />
 					<Route path="web-dev" element={<WebDev />} />
 					<Route path="frontend" element={<Frontend />} />
+					<Route path="backend" element={<Backend />} />
 					<Route path="node" element={<Node />} />
 					<Route path="seo" element={<SEO />} />
 					<Route path="php" element={<PHP />} />
