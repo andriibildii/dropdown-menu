@@ -42,7 +42,7 @@ const MenuItems = ({ items, depthLevel }) => {
 			onMouseLeave={onMouseLeave}
 			onClick={closeDropdown}
 		>
-			{items.submenu && items.url ? (
+			{items.url && items.submenu ? (
 				<>
 					<button
 						type="button"
@@ -64,9 +64,9 @@ const MenuItems = ({ items, depthLevel }) => {
 						)}
 					</button>
 					<Dropdown
+						depthLevel={depthLevel}
 						submenus={items.submenu}
 						dropdown={dropdown}
-						depthLevel={depthLevel}
 					/>
 				</>
 			) : !items.url && items.submenu ? (

@@ -2,14 +2,13 @@ import { menuItems } from "../menuItems";
 import MenuItems from "./MenuItems";
 
 const Navbar = () => {
-	const depthLevel = 0;
-
 	return (
 		<nav>
 			<ul className="menus">
-				{menuItems.map((item) => {
+				{menuItems.map((items) => {
+					const depthLevel = 0;
 					return (
-						<MenuItems items={item} key={item.id} depthLevel={depthLevel} />
+						<MenuItems items={items} key={items.id} depthLevel={depthLevel} />
 					);
 				})}
 			</ul>
